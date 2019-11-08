@@ -1,0 +1,344 @@
+*
+{
+    box-sizing:border-box;
+    margin:0;  
+    padding:0;
+    
+}
+
+body{
+    font-family:"Raleway","sans-serif";
+    background-color:rgb(231, 243, 246);
+}
+body:hover{
+    cursor:default;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+
+.logo img{
+    height:55px;
+    margin-left:28px;
+    border:1px solid black;
+
+}
+
+.heading{
+   
+    margin-left:100px;
+    position:fixed;
+    font-size:20px;
+   
+}
+
+nav{
+    background-color:white;
+    height:80px;
+    padding:22px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    width:100%;
+    overflow: hidden;
+    position:fixed;
+    margin:0 auto;
+    margin-top:-80px;
+}
+
+.desktop-nav{
+   display:flex;
+}
+
+.desktop-nav li{
+    list-style:none;
+    margin:0 24px;
+    font-size:18px;
+}
+
+.desktop-nav li a{
+    color:black;
+    text-decoration:none;
+}
+
+.desktop-nav li a:hover{
+    
+    background-color:rgb(149, 245, 245);
+    border-radius:5px 5px;
+   
+}
+
+
+
+
+/*header*/
+
+/*Slideshow container*/
+.slideshow {
+    margin-top:80px;
+    height: 580px;
+    width:100%;
+    overflow:hidden;
+    margin-bottom:0px;
+    
+  }
+.message{
+    margin-top:-540px;
+    font-size:30px;
+    color:orange;
+    margin-left:20px;
+    height:540px;
+}
+  .mark{
+    background-color:orange;
+    margin:auto;
+    width:90%;
+    height:10px;
+    margin-top:0px;
+    border-radius:50px 50px 10px 10px;
+}
+
+       
+.sec1{
+    float:right;
+    height:450px;
+    width:100%;
+    padding:15px;
+    margin:auto;
+}
+
+.help1 img{
+    height:200px;
+    margin-top:45px;
+    margin-left:10px;
+    border: 2px solid grey;
+    
+}
+
+.help1{
+    float:left;
+    margin-left:50px;
+    width:600px;
+    height:340px;
+}
+
+.help2{
+    margin-right:80px;
+    float :right;
+    height:340px;
+}
+
+.container{
+    margin-left:30px;
+    width:350px;
+    background-color:#dddd;
+    border-radius:25px 25px 25px 25px;
+}
+.help2 p{
+    margin-left:30px;
+}
+.FD{
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: black;
+    margin-bottom:10px;
+}
+
+.food{
+     width: 75%; 
+     background-color: rgb(214, 218, 30);
+    }
+.mat {
+    width: 52%; 
+    background-color: rgb(47, 231, 124);
+}
+.Ess{
+     width:66%;
+      background-color:#e684d5;
+}
+
+#btn{
+   background-color:rgb(20, 20, 247);
+   margin-top:10px;
+   margin-left:120px;
+   margin-right:190px;
+ 
+    height:40px;
+    font-size:18px;
+    border-radius:10px;
+    text-align:center; 
+    padding:10px;   
+}
+ #btn a{
+    text-decoration:none;
+    color:white;
+}
+
+.help3
+{
+    float:left;
+    margin-left:280px;
+    margin-top:20px;
+    font-size:40px;
+    font-style:bold;
+    color:green;
+    
+}
+.sec2
+{
+  width:100%;
+}
+
+.poster
+{
+    float:left;
+    width:45%;
+    margin:0px 395px 30px 395px ;
+    height:300px;
+    background-color:rgb(158, 236, 246);
+    border-radius:30px;
+    border-color:2px solid black;
+   
+}
+.msg{
+    margin-left:70px;
+    margin-top:50px;
+    font-size:25px;
+}
+
+
+
+footer
+{   float:right;
+    width:100%;
+    height:120px;
+    background-color:rgb(211, 206, 206);
+}
+
+.update{
+    margin-left:150px;
+    margin-top:10px;
+}
+.update1{
+    float:right;
+    margin-right:200px;
+    margin-top:-50px;
+}
+
+input[type=text]
+{
+width:299px;
+height:40px;
+padding:20px 20px;
+text-align:left;
+border:2px solid green;
+border-radius:20px;
+}
+
+button[type=submit]
+{
+    height:37px;
+    font-size:15px;
+    width:80px;
+    border-radius:20px;
+    border-color:green;
+    text-align:center; 
+    padding:5px;   
+}
+button[type=submit]:hover{
+    cursor:pointer;
+}
+
+
+.update2{
+    float:left;
+    width:100%;
+    margin-top:10px;
+    height:30px;
+    background-color:rgb(36, 34, 34);
+   
+}
+.toggle{
+    display:none;
+    
+}
+@media(max-width:1100px){
+    .desktop-nav{
+        display:none;
+    }
+}
+
+@media(max-width:1050px)
+{    
+
+    .toggle{
+        display:block;
+        cursor:pointer;
+        margin-top:40px;
+        width:50px;
+        height:50px;
+
+    }
+   .slideshow{
+        width:100%;
+        height:250px;
+    }
+    .message{
+        margin-top:-260px;
+        font-size:20px;
+    }
+    .mark{
+        margin-top:-280px;
+    }
+
+    .help1{
+      margin-left:-15px;  
+      margin:auto;
+    }
+    .help3{
+        margin-left:10px;
+        font-size:25px;
+    }
+
+    .sec2{
+        float:right;
+        margin-top:300px;
+    }
+
+    
+    .poster
+    {
+    float:left;
+    width:40%;
+    margin:0px 380px 30px 200px ;
+    height:300px;
+    background-color:rgb(158, 236, 246);
+    border-radius:30px 30px;
+   }
+   .msg{
+    margin-left:70px;
+    margin-top:20px;
+    font-size:0px;
+    }
+
+    .update{
+    margin-left:10px;
+    margin-top:10px;
+    width:300px;
+    }
+    
+    
+.update1{
+    float:right;
+    margin-right:10px;
+    margin-top:-70px;
+}
+
+footer{
+    height:130px;
+}
+
+}

@@ -1,0 +1,181 @@
+*
+{
+    box-sizing:border-box;
+    margin:0;  
+    padding:0;
+    
+}
+body{
+    font-family:"Raleway","sans-serif";
+    margin:auto;
+    background-color:whitesmoke;
+}
+
+body:hover
+{
+    cursor:default;
+}
+
+
+.heading1{
+    height:70px;
+    width:100%;
+    background-color:rgb(231, 243, 246);
+    position:fixed;
+    margin:auto;
+    display:flex;
+}
+
+.heading1 h2{
+    margin:auto;
+    margin-top:20px;
+}
+
+.heading1 h3{
+    margin-top:20px;
+    margin-right:20px;
+}
+
+.sec1{
+    margin-left:12px;
+    width:440px;
+    height:600px;
+    float:left;
+    
+}
+.sec1 img{
+    margin-left:20px;
+    margin-top:20px;
+    width:390px;height:400px;
+}
+
+.p1{
+    margin-left:20px;width:390px;height:200px;background-color:black;font-size:20px;color:white;
+}
+.sec2{
+    width:440px;
+    height:600px;
+    float:left;
+  
+}
+.sec2 img{
+    margin-left:20px;
+    margin-top:20px;
+    width:390px;height:400px;
+}
+
+.sec3
+{
+    margin-left:0px;
+    width:440px;
+    height:600px;
+    float:left;
+}
+
+.sec3 img{
+    margin-left:20px;
+    margin-top:20px;
+    width:390px;height:400px;
+}
+
+.sec4{
+    float:left;
+    width:390px;
+    margin-top:40px;
+    margin-left:30px;
+    height:280px;
+  
+}
+
+.sec5{
+    float:left;
+    width:850px;
+    margin-top:40px;
+    margin-left:50px;
+    height:280px;
+    background-color:red;
+}
+
+
+.footer{
+    float:right;
+    width:100%;
+    height:50px;
+    margin:auto;
+    background:black;
+    color:blue;
+   margin-top:10px;
+}
+
+@media(max-width:1360px){
+ .sec1{
+    margin-left:12px;
+    width:440px;
+    height:600px;
+    float:left;
+    
+}
+.sec1 img{
+    margin-left:20px;
+    margin-top:20px;
+    width:390px;height:400px;
+}
+
+.p1{
+    margin-left:20px;width:390px;height:200px;background-color:black;font-size:20px;color:white;
+}
+.sec2{
+    width:440px;
+    height:600px;
+    float:left;
+  
+}
+.sec2 img{
+    margin-left:20px;
+    margin-top:20px;
+    width:390px;height:400px;
+}
+
+.sec3
+{
+    margin-left:0px;
+    width:440px;
+    height:600px;
+    float:left;
+}
+
+.sec3 img{
+    margin-left:20px;
+    margin-top:20px;
+    width:390px;height:400px;
+}
+
+.sec4{
+    float:left;
+    width:390px;
+    margin-top:40px;
+    margin-left:30px;
+    height:280px;
+  
+}
+
+.sec5{
+    float:left;
+    width:850px;
+    margin-top:40px;
+    margin-left:50px;
+    height:280px;
+    background-color:red;
+}
+
+
+.footer{
+    float:right;
+    width:100%;
+    height:50px;
+    margin:auto;
+    background:black;
+    color:blue;
+   margin-top:10px;
+}
+   }

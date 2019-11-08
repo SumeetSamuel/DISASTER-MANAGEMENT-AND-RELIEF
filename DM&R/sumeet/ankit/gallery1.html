@@ -1,0 +1,263 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>LightGallery</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://cdn.jsdelivr.net/lightgallery/1.3.9/css/lightgallery.min.css" rel="stylesheet">
+        <style>body{background-color:#152836}h2{color:#fff;margin-bottom:40px;text-align:center;font-weight:100;}</style>
+        <style type="text/css">
+          body{
+  background-image: url(heart.jpg);
+}
+h2{color:#fff;margin-bottom:40px;text-align:center;font-weight:100;}
+.demo-gallery > ul {
+  margin-bottom: 0;
+}
+.demo-gallery > ul > li {
+    float: left;
+    margin-bottom: 25px;
+    margin-right: 10px;
+    width: 300px;
+}
+.demo-gallery > ul > li a { 
+  border: 3px solid #FFF;
+  border-radius: 5px;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  float: left;
+}
+.demo-gallery > ul > li a > img {
+  -webkit-transition: -webkit-transform 0.15s ease 0s;
+  -moz-transition: -moz-transform 0.15s ease 0s;
+  -o-transition: -o-transform 0.15s ease 0s;
+  transition: transform 0.15s ease 0s;
+  -webkit-transform: scale3d(2, 2, 2);
+  transform: scale3d(1, 1, 1);
+  height: 50%;
+  width: 100%;
+}
+.demo-gallery > ul > li a:hover > img {
+  -webkit-transform: scale3d(1.1, 1.1, 1.1);
+  transform: scale3d(1.1, 1.1, 1.1);
+}
+.demo-gallery > ul > li a:hover .demo-gallery-poster > img {
+  opacity: 1;
+}
+.demo-gallery > ul > li a .demo-gallery-poster {
+  background-color: rgba(0, 0, 0, 0.1);
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transition: background-color 0.15s ease 0s;
+  -o-transition: background-color 0.15s ease 0s;
+  transition: background-color 0.15s ease 0s;
+}
+.demo-gallery > ul > li a .demo-gallery-poster > img {
+  left: 50%;
+  margin-left: -10px;
+  margin-top: -10px;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transition: opacity 0.3s ease 0s;
+  -o-transition: opacity 0.3s ease 0s;
+  transition: opacity 0.3s ease 0s;
+}
+.demo-gallery > ul > li a:hover .demo-gallery-poster {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.demo-gallery .justified-gallery > a > img {
+  -webkit-transition: -webkit-transform 0.15s ease 0s;
+  -moz-transition: -moz-transform 0.15s ease 0s;
+  -o-transition: -o-transform 0.15s ease 0s;
+  transition: transform 0.15s ease 0s;
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  height: 100%;
+  width: 100%;
+}
+.demo-gallery .justified-gallery > a:hover > img {
+  -webkit-transform: scale3d(1.1, 1.1, 1.1);
+  transform: scale3d(1.1, 1.1, 1.1);
+}
+.demo-gallery .justified-gallery > a:hover .demo-gallery-poster > img {
+  opacity: 1;
+}
+.demo-gallery .justified-gallery > a .demo-gallery-poster {
+  background-color: rgba(0, 0, 0, 0.1);
+  bottom: 10;
+  left: 10;
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transition: background-color 0.15s ease 0s;
+  -o-transition: background-color 0.15s ease 0s;
+  transition: background-color 0.15s ease 0s;
+}
+.demo-gallery .justified-gallery > a .demo-gallery-poster > img {
+  left: 50%;
+  margin-left: -10px;
+  margin-top: -10px;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transition: opacity 0.3s ease 0s;
+  -o-transition: opacity 0.3s ease 0s;
+  transition: opacity 0.3s ease 0s;
+}
+.demo-gallery .justified-gallery > a:hover .demo-gallery-poster {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.demo-gallery .video .demo-gallery-poster img {
+  height: 50px;
+  margin-left: -24px;
+  margin-top: -24px;
+  opacity: 0.8;
+  width: 50px;
+}
+.demo-gallery.dark > ul > li a {
+  border: 3px solid #04070a;
+}
+.home .demo-gallery {
+  padding-bottom: 80px; 
+}
+        </style>
+        <script type="text/javascript">
+          
+
+        </script>
+    </head>
+    <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+     <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="C:\Users\DELL\Desktop\DM&R\sumeet\Main.html""><span class="glyphicon glyphicon-log-in"></span> HOME</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    <body class="home">
+        <div class="container" style="margin-top:40px;">
+            <h2>GALLERY<br>The Sufferers</h2>
+            <div class="demo-gallery">
+                <ul id="lightgallery" class="list-unstyled row">
+                    <li class="col-xs-6 col-sm-4 col-md-2 col-lg-2" data-responsive="c1.jpg" >
+                        <a href="c1.jpg">
+                            <img class="img-responsive" src="c1.jpg">
+                        </a>
+                    </li>
+                    <li class="col-xs-6 col-sm-4 col-md-2 col-lg-2" data-responsive="c2.jpg" >
+                        <a href="c2.jpg">
+                            <img class="img-responsive" src="c2.jpg">
+                        </a>
+                    </li>
+                    <li class="col-xs-6 col-sm-4 col-md-2 col-lg-2" data-responsive="c3.jpg">
+                        <a href="c3.jpg">
+                            <img class="img-responsive" src="c3.jpg">
+                        </a>
+                    </li>
+                    <li class="col-xs-6 col-sm-4 col-md-2 col-lg-2" data-responsive="c4.jpg" >
+                        <a href="c4.jpg">
+                            <img class="img-responsive" src="c4.jpg">
+                        </a>
+                    </li>
+            <li class="col-xs-6 col-sm-4 col-md-2 col-lg-2" data-responsive="c5.jpg" >
+                        <a href="/home/ankit/Pictures/c5.jpg">
+                            <img class="img-responsive" src="c5.jpg">
+                        </a>
+                    </li>
+                    <li class="col-xs-6 col-sm-4 col-md-2 col-lg-2" data-responsive="c6.jpg" >
+                        <a href="/home/ankit/Pictures/c6.jpg">
+                            <img class="img-responsive" src="c6.jpg">
+                        </a>
+                    </li>
+                    <li class="col-xs-6 col-sm-4 col-md-2 col-lg-2" data-responsive="c7.jpg" >
+                        <a href="/home/ankit/Pictures/c7.jpg">
+                            <img class="img-responsive" src="c7.jpg">
+                        </a>
+                    </li>
+                    <li class="col-xs-6 col-sm-4 col-md-2 col-lg-2" data-responsive="c8.jpg" >
+                        <a href="/home/ankit/Pictures/c8.jpg">
+                            <img class="img-responsive" src="c8.jpg">
+                        </a>
+                    </li>
+            <li class="col-xs-6 col-sm-4 col-md-2 col-lg-2" data-responsive="c9.jpg" >
+                        <a href="/home/ankit/Pictures/c9.jpg">
+                            <img class="img-responsive" src="c9.jpg">
+                        </a>
+                    </li>
+                    <li class="col-xs-6 col-sm-4 col-md-2 col-lg-2" data-responsive="c10.jpg" >
+                        <a href="/home/ankit/Pictures/c10.jpg">
+                            <img class="img-responsive" src="c10.jpg">
+                        </a>
+                    </li>
+                    <li class="col-xs-6 col-sm-4 col-md-2 col-lg-2" data-responsive="c11.jpg" >
+                        <a href="/home/ankit/Pictures/c11.jpg">
+                            <img class="img-responsive" src="c11.jpg">
+                        </a>
+                    </li>
+                    <li class="col-xs-6 col-sm-4 col-md-2 col-lg-2" data-responsive="c12.jpg" >
+                        <a href="/home/ankit/Pictures/c12.jpg">
+                            <img class="img-responsive" src="c12.jpg">
+                        </a>
+                    </li>
+            <li class="col-xs-6 col-sm-4 col-md-2 col-lg-2" data-responsive="c13.jpg" >
+                        <a href="/home/ankit/Pictures/c13.jpg">
+                            <img class="img-responsive" src="c13.jpg">
+                        </a>
+                    </li>
+                    <li class="col-xs-6 col-sm-4 col-md-2 col-lg-2" data-responsive="c14.jpg" >
+                        <a href="/home/ankit/Pictures/c14.jpg">
+                            <img class="img-responsive" src="c14.jpg">
+                        </a>
+                    </li>
+                    <li class="col-xs-6 col-sm-4 col-md-2 col-lg-2" data-responsive="c15.jpg" >
+                        <a href="/home/ankit/Pictures/c15.jpg">
+                            <img class="img-responsive" src="c15.jpg">
+                        </a>
+                    </li>
+                    <li class="col-xs-6 col-sm-4 col-md-2 col-lg-2" data-responsive="c16.jpg" >
+                        <a href="/home/ankit/Pictures/c16.jpg">
+                            <img class="img-responsive" src="c16.jpg">
+                        </a>
+                    </li>
+            <li class="col-xs-6 col-sm-4 col-md-2 col-lg-2" data-responsive="c17" >
+                        <a href="/home/ankit/Pictures/c17.jpg">
+                            <img class="img-responsive" src="c17.jpg">
+                        </a>
+                    </li>
+                    <li class="col-xs-6 col-sm-4 col-md-2 col-lg-2" data-responsive="c18.jpg">
+                        <a href="/home/ankit/Pictures/c18.jpg">
+                            <img class="img-responsive" src="c19.jpg">
+                        </a>
+                    </li>
+                    <li class="col-xs-6 col-sm-4 col-md-2 col-lg-2" data-responsive="c20.jpg" >
+                        <a href="/home/ankit/Pictures/c20.jpg">
+                            <img class="img-responsive" src="c20.jpg"> 
+                        </a>
+                    </li>
+                    <li class="col-xs-6 col-sm-4 col-md-2 col-lg-2" data-responsive="c19.jpg">
+                        <a href="/home/ankit/Pictures/c19.jpg">
+                            <img class="img-responsive" src="c19.jpg">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <script>
+            $(document).ready(function(){
+                $('#lightgallery').lightGallery(); 
+            });
+        </script>
+    </body>    
+</html>

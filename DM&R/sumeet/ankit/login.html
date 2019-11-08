@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DISASTER </title>
+	<style type="text/css">
+
+		*{
+			padding: 0px;
+			margin: 0px;
+			box-sizing: border-box;
+		}
+
+		.header{
+			width: 100%;
+			height: 1000px;
+			background-image: url(heart.jpg);
+			background-size: cover;
+
+		}
+
+		.navbar{
+			width: 100%
+			padding:20px;
+			position: fixed;
+			top: 0px;
+			transition: 0.5s;
+			text-align: center;	
+			box-shadow: 1px 2px 4px  grey;
+			background: rgba(2,2,2,0.2);
+		}
+
+		.navbar ul li{
+			list-style-type: none;
+			display: inline-block;
+			padding: 05px;
+			margin:0px 20px;
+			font-size: 18px;
+			font-family: sans-serif;
+			cursor: pointer;
+			border-radius: 20px; 
+			font-weight: bold;
+			transition: .5s;
+
+
+
+		}
+
+		.navbar ul li:hover{
+			background: orange;
+		}
+
+		.box{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			width: 400px;
+			padding: 40px;
+			background: rgba(0,0,0,.8);
+			box-sizing: border-box;
+			box-shadow: 0 15px 25px rgba(0,0,0,2);
+			border-radius: 20px;
+		}
+
+		.box h2{
+			margin: 0 0 30px;
+			padding: 0;
+			color: #fff;
+			text-align: center;
+
+		}
+
+		.box .inputBox
+		{
+			position: relative;
+		}
+
+		.box .inputbox input
+		{
+			width: 100%;
+			padding: 10px 0;
+			font-size: 16px;
+			color: #fff;
+			margin-bottom: 30px;
+			border: none;
+			border-bottom: 1px solid #fff;
+			outline: none;
+			background: transparent;
+
+		}
+
+		.box .inputBox label{
+			position: absolute;
+			top: 0;
+			left: 0;
+			padding: 10px 0;
+			font-size: 16px;
+			color: #fff;
+			pointer-events: none;
+			transition: .5s;
+		}
+
+		.box .inputBox input:focus ~ label,
+		.box .inputBox input:valid ~ label
+		{
+			top: -18px;
+			left: 0;
+			color: white;
+			font-size: 22px;
+		}
+
+		input[type=submit]:hover {
+  background-color: red;
+
+
+
+
+
+
+
+
+
+
+	</style>
+
+	<script type="text/javascript">
+	function myFunction(){
+alert("Submitted successfully");
+}
+		
+		function validateForm() {
+  var x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+    
+  }
+}
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+
+
+</script>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+
+</head>
+<body>
+
+	<div class="header">
+		
+</div>
+
+
+<div class="box">
+	<h2>FEEDBACK</h2>
+	<form name="myForm" action="" onsubmit="return validateForm()" method="post">>
+		<div class="inputbox">
+			<input type="text" placeholder="E-mail" maxlength="50" name="" required="">
+			<label></label>
+		</div>
+
+		<div class="inputbox">
+			<input type="number" placeholder="CONTACT NUMBER" maxlength="12" name="" required="">
+			<label></label>
+
+			<label for="country">Country</label>
+			<select class="inputbox" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+     <textarea class="inputbox" name="subject" placeholder="Write something.." style="height:800px width:1000px"></textarea>
+
+		<input type="submit" value="submit" onclick="myFunction()"></button>
+	</form>
+</div>
+
+
+</body>
+</html>
