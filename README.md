@@ -1,8 +1,8 @@
 # DISASTER-MANAGEMENT-RELIEF
 
-It is a Front-End Website.
+It is a Socia Front-End Website.
 Technology used HTML,CSS3,JAVASCRIPT,jQUERY,BOOTSTRAP.
-It is a Social Website.
+
 
 Team Members:
 1.Ankit Sinha.
